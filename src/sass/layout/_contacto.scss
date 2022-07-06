@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .label {
+        max-width: 50rem;
+        width: 100%;
+        color: #fff;
+        margin-bottom: 2rem;
+   
+        input, textarea {
+            width: 100%;
+            height: 3rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            padding: .5rem;
+            outline: none;
+            
+        }
+
+        .input__mensaje {
+            height: 8rem;
+        }
+
+
+    }
+}
+
+

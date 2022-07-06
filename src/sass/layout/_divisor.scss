@@ -1,0 +1,24 @@
+@use '../base/variables' as v;
+
+.divisor {
+    background-color: v.$letras;
+    height: 2px;
+    width: 60%;
+    margin: 2rem auto;
+
+    .punto {
+        position: relative;
+        background-color: v.$letras;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        top: -7px;
+    }
+}
+
+.left { 
+    &-0 { left: (calc(0% - 1px)); }
+    &-25 { left: 32%; }
+    &-75 { left: 63%; }
+    &-100 { left: (calc(100% - 13px)); }
+}

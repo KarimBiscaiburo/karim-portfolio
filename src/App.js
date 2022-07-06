@@ -1,21 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+// import './sass/app.scss';
+import "./sass/app.scss";
+import Nav from './components/Nav';
+import Inicio from './components/Inicio';
+import Divisor from './components/Divisor';
+import Contacto from './components/Contacto';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Probando</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Inicio />
+
+      <div className='start'>
+        {/* Seccion Sobre Mi */}
+        <div className='mb-4'>
+          <Divisor porcentaje="0" />
+          <div className='contenedor apartado'>
+            <h2>About Me</h2>
+          </div>
+        </div>
+
+        {/* Seccion Habilidades */}
+        <div className='mb-4'>
+          <Divisor porcentaje="25" />
+          <div className='contenedor apartado'>
+            <h2>Skills</h2>
+          </div>
+        </div>
+
+        {/* Seccion Proyectos */}
+        <div className='mb-4'>
+          <Divisor porcentaje="75" />
+          <div className='contenedor apartado'>
+            <h2>Projects</h2>
+          </div>
+        </div>
+
+        {/* Seccion Contacto */}
+        <div className='mb-4'> 
+          <Divisor porcentaje="100" />
+          <div className='contenedor apartado'>
+            <h2>Contact Me</h2>
+            <Contacto />
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 }

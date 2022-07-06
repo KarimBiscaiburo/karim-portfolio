@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+
+    &__texto {
+        margin-top: 10rem;
+    }
+}
+
+.imagen {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}

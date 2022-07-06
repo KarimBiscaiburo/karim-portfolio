@@ -1,0 +1,54 @@
+@use 'variables' as v;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: v.$fondo;
+
+    // Estilos Scrollbar
+    &::-webkit-scrollbar {
+
+        width: 10px;
+        padding-right: 10px;
+    
+        &-thumb {
+            background: v.$gradiente;
+            border-radius: 15px;
+        }   
+    }
+}
+
+
+
+
+//Tamaño letras 
+h1, h2, h3 { margin: 0; }
+h1, h2, h3, p { color: v.$letras; }
+h1 { font-size: 3rem;}
+h2 { font-size: 2.4rem;}
+h3 { font-size: 2.4rem;}
+p { font-size: 2.4rem;}
+
+// Globales
+.ml-2 { margin-left: 2rem;}
+.ml-4 { margin-left: 4rem;}
+.mb-4 { margin-bottom: 4rem;}
+
+.contenedor {
+    width: 95%;
+    margin: auto;
+}
+
+.start {
+    margin:5rem 0 3rem 0;
+}
+
+.apartado {
+    text-align: center;
+}
