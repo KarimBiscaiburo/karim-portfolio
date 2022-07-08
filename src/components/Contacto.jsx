@@ -3,7 +3,7 @@ import "../sass/layout/_contacto.scss";
 
 function Contacto() {
     return(
-        <form name="contacto" method="POST" className="formulario" data-netlify="true">
+        <form action="https://formsubmit.co/kbiscaiburo@gmail.com" name="contacto" method="POST" className="formulario">
             <ul className="formulario__lista">
                 <li className="label">
                     <label className="label__info" htmlFor="nombre">Nombre</label>
@@ -11,7 +11,7 @@ function Contacto() {
                 </li>
                 <li className="label">
                     <label className="label__info" htmlFor="email">Email:</label>
-                    <input className="input__email" name="email" type="email" />
+                    <input className="input__email" type="email" name="email"  />
                 </li>
                 <li className="label">
                     <label className="label__info" htmlFor="mensaje">Mensaje:</label>
