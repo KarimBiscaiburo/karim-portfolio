@@ -42,7 +42,7 @@
             font-size: 1.5rem;
         }
 
-        .btn-enviar {
+        .btn {
             background-color: v.$segundo;
             color: v.$letras;
             cursor: pointer;
@@ -58,6 +58,11 @@
             }
         }
     }
-        
+
+    .input-enviar {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
 
