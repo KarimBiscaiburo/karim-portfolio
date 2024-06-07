@@ -49,6 +49,7 @@
     border: none;
     height: 45px;
     width: 45px;
+    cursor: pointer;
 }
 .settings img {
     height: 45px;
