@@ -1,6 +1,6 @@
 import "../styles/frontpage.css";
 
-import meImage from "../img/me-without-background.png";
+import meImage from "../img/me-without-background.webp";
 import dataObjectIcon from "../img/data-object-icon.png";
 import personalDevelopmentIcon from "../img/personal-development-icon.png";
 import walletIcon from "../img/wallet-icon.png";
