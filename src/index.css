@@ -8,6 +8,8 @@
   --background-gradient: linear-gradient(#0B0B0B, #2B2B2B, #0B0B0B);
   --dark: #0C0C0C;
   --lighten-dark: #161616;
+  --transparent-dark: #0c0c0cd1;
+;
 }
 
 * {
@@ -15,6 +17,9 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  color: var(--white);
 }
 h1, h2, h3, h4 {
   text-wrap: balance;
