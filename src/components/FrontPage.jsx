@@ -1,5 +1,7 @@
 import "../styles/frontpage.css";
 
+
+//IMG
 import meImage from "../img/me-without-background.webp";
 import dataObjectIcon from "../img/data-object-icon.png";
 import personalDevelopmentIcon from "../img/personal-development-icon.png";
@@ -8,6 +10,9 @@ import bankIcon from "../img/bank-icon.png";
 import linkedinLogo from "../img/linkedin-logo.png";
 import githubLogo from "../img/github-logo.png";
 import downloadIcon from "../img/download-icon.png";
+
+//PDF
+import CV from "../img/cv-karim-biscaiburo.pdf";
 
 export default function FrontPage() {
 
@@ -45,18 +50,18 @@ export default function FrontPage() {
                     </div>
                 </div>
                 <div className="frontpage-links">
-                    <button>
+                    <a href="https://www.linkedin.com/in/karim-biscaiburo/" target="blank">
                         <p>Linkedin</p>
                         <img src={linkedinLogo} alt="linkedin-logo" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href="https://github.com/KarimBiscaiburo" target="blank">
                         <p>Github</p>
                         <img src={githubLogo} alt="github-logo" />
-                    </button>
-                    <button>
+                    </a>
+                    <a href={CV} target="blank">
                         <p>Resume</p>
                         <img src={downloadIcon} alt="download-icon" />
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="image-me">
