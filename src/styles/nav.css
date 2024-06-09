@@ -10,7 +10,7 @@
 }
 .nav {
     border: 1px solid var(--gray);
-    border-radius: 5px 50px 5px 50px;
+    border-radius: 5px 40px 5px 40px;
     box-shadow: 0 0 7px 4px var(--lighten-dark);
     background-color: var(--transparent-dark);
     backdrop-filter: blur(5px);
@@ -22,36 +22,37 @@
     padding: 15px 30px;
 }
 .nav_list-item {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
 }
 .nav_list-item a {
     outline: none;
 }
 .nav_list-item img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
 }
 .settings {
     border: 1px solid var(--gray);
     border-radius: 50%;
     box-shadow: 0 0 7px 4px var(--lighten-dark);
     padding: 5px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
+    background-color: var(--transparent-dark);
 }
 .settings button {
     background-color: transparent;
     border: none;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
 }
 .settings img {
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
 }

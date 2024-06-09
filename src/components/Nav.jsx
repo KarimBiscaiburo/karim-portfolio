@@ -21,7 +21,7 @@ export default function Nav() {
                 <nav className="nav">
                     <ul className="nav_list">
                         <li className="nav_list-item">
-                            <a href="#"><img src={personIcon} alt="person-icon" /></a>
+                            <a href="#about"><img src={personIcon} alt="person-icon" /></a>
                         </li>
                         <li className="nav_list-item">
                             <a href="#"><img src={workIcon} alt="work-icon" /></a>

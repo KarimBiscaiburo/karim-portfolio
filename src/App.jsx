@@ -4,6 +4,7 @@ import './App.css';
 // COMPONENTS
 import Nav from './components/Nav';
 import FrontPage from './components/FrontPage';
+import About from './components/About';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <div className='center-content'>
         <FrontPage />
+        <About />
       </div>
     </>
   )

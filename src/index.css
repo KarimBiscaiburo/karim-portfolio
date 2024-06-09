@@ -20,6 +20,7 @@
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
   color: var(--white);
+  scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
   text-wrap: balance;
