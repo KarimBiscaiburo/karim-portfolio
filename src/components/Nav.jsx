@@ -24,7 +24,7 @@ export default function Nav() {
                             <a href="#about"><img src={personIcon} alt="person-icon" /></a>
                         </li>
                         <li className="nav_list-item">
-                            <a href="#"><img src={workIcon} alt="work-icon" /></a>
+                            <a href="#experience    "><img src={workIcon} alt="work-icon" /></a>
                         </li>
                         <li className="nav_list-item">
                             <a href="#"><img src={folderIcon} alt="folder-icon" /></a>

@@ -1,0 +1,139 @@
+.experience-section {
+    padding: 100px 0;
+}
+.title-separator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.title-separator h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.experience-cards {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 230px;
+}
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 375px 375px;
+    grid-template-areas: "image resume"
+                         "description description";
+    background-color: var(--darken-gray);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 4px var(--dark);
+    height: 400px;
+    min-width: 100%;
+    padding: 20px;
+    gap: 10px;
+    transition: .3s all ease;
+}
+.card.active  {
+    height: 800px;
+}
+.card-container_img {
+    grid-area: image;
+    position: relative;
+}
+.card-container_img a, .card-container_img div  {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 550px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.card-container_img a img, .card-container_img div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.card-resume {
+    grid-area: resume;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card-resume h3 {
+    font-size: 38px;
+    font-weight: bold;
+}
+.card-resume p:first-of-type {
+    font-size: 26px;
+}
+.card-resume p:last-of-type {
+    font-size: 22px;
+}
+.card-description {
+    grid-area: description;
+    transition: .1s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 800px;
+}
+.card-description p {
+    font-size: 22px;
+}
+.card .card-description {
+    visibility: hidden;
+    opacity: 0;
+}
+.card.active .card-description {
+    visibility: visible;
+    opacity: 1;
+}
+.card-description_tech {
+    display: flex;
+    gap: 10px;
+}
+.card-description_tech img {
+    width: 70px;
+    height: 70px;
+}
+.experience-see-more {
+    position: absolute;
+    cursor: pointer;
+    padding: 7px 15px;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    box-shadow: 0 0 4px var(--white-shadow);
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s all ease;
+}
+.experience-see-more:hover {
+    box-shadow: 0 0 8px var(--white-shadow);
+}
+.slider-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.slider-buttons img {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+.slider-buttons span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    transition: .3s all ease;
+}
+.slider-buttons span.active {
+    background-color: var(--white);
+}
