@@ -7,4 +7,53 @@
     text-align: center;
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 70px;
+}
+.education-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.education-card {
+    width: 480px;
+    height: 400px;
+    background-color: var(--darken-gray);
+    box-shadow: 0 0 10px 4px var(--dark);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.education-card_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.education-card_text h3 {
+    font-size: 38px;
+    font-weight: bold;
+}
+.education-card_text a, .education-card_text h4 {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+.education-card_text p {
+    font-size: 20px;
+}
+.education-card_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-logos {
+    display: flex;
+    gap: 5px;
+}
+.details-logos img {
+    height: 50px;
+    width: 50px;
 }
