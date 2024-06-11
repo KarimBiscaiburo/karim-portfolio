@@ -7,6 +7,7 @@ import FrontPage from './components/FrontPage';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Education from './components/Education';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Education />
       </div>
     </>
   )

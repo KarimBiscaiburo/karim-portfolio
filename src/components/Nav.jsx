@@ -24,13 +24,13 @@ export default function Nav() {
                             <a href="#about"><img src={personIcon} alt="person-icon" /></a>
                         </li>
                         <li className="nav_list-item">
-                            <a href="#experience    "><img src={workIcon} alt="work-icon" /></a>
+                            <a href="#experience"><img src={workIcon} alt="work-icon" /></a>
                         </li>
                         <li className="nav_list-item">
-                            <a href="#"><img src={folderIcon} alt="folder-icon" /></a>
+                            <a href="#projects"><img src={folderIcon} alt="folder-icon" /></a>
                         </li>
                         <li className="nav_list-item">
-                            <a href="#"><img src={schoolIcon} alt="school-icon" /></a>
+                            <a href="#education"><img src={schoolIcon} alt="school-icon" /></a>
                         </li>
                         <li className="nav_list-item">
                             <a href="#"><img src={mailIcon} alt="mail-icon" /></a>
