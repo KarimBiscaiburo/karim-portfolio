@@ -1,0 +1,40 @@
+.technologies-section {
+    padding: 120px 0;
+}
+.technologies-section h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.technologies-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-image: url("../img/technologies-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.technologies-container img {
+    transition: .3s all ease;
+}
+.technologies-container img:first-of-type, .technologies-container img:last-of-type {
+    height: 50px;
+    width: 50px;
+}
+.technologies-container img:nth-child(2), .technologies-container img:nth-child(7) {
+    height: 70px;
+    width: 70px;
+}
+.technologies-container img:nth-child(3), .technologies-container img:nth-child(4), .technologies-container img:nth-child(5), .technologies-container img:nth-child(6) {
+    height: 90px;
+    width: 90px;
+}
+.technologies-container img:hover {
+    transform: scale(1.2);
+}

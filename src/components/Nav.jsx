@@ -33,7 +33,7 @@ export default function Nav() {
                             <a href="#education"><img src={schoolIcon} alt="school-icon" /></a>
                         </li>
                         <li className="nav_list-item">
-                            <a href="#"><img src={mailIcon} alt="mail-icon" /></a>
+                            <a href="#contact"><img src={mailIcon} alt="mail-icon" /></a>
                         </li>
                     </ul>
                 </nav>

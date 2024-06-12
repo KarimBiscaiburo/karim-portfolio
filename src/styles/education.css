@@ -1,7 +1,8 @@
 .section-education {
     display: flex;
     flex-direction: column;
-    padding-top: 350px;
+    margin-top: 250px;
+    padding-top: 100px;
 }
 .section-education h2 {
     text-align: center;

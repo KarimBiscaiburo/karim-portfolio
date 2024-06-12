@@ -53,7 +53,7 @@ export default function Experience() {
                     </div>
                     <div className="card-resume">
                         <h3>Web Design of a Chemistry</h3>
-                        <p>Create a page for a company in order to give visibility to your services and get potential clients</p>
+                        <p>Created a page for a company in order to give visibility to their services and get potential clients</p>
                         <p>01/2024 - 03/2024</p>
                     </div>
                     <div className="card-description">
@@ -82,7 +82,7 @@ export default function Experience() {
                         </div>
                     </div>
                     <div className="card-resume">
-                        <h3>Page for a Hairdresser</h3>
+                        <h3>Website for a Hairdresser</h3>
                         <p>Website made so that clients can request appointments automatically and have an administrative panel to manage it</p>
                         <p>05/2023 - 08/2023</p>
                     </div>

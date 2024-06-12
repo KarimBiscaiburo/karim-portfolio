@@ -8,6 +8,8 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Technologies from './components/Technologies';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Experience />
         <Projects />
         <Education />
+        <Technologies />
+        <Contact />
       </div>
     </>
   )

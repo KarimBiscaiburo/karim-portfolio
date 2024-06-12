@@ -1,0 +1,50 @@
+.footer-contact {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.contact-form {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    max-width: 80%;
+    border: 1px solid var(--darken-gray);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s all ease;
+}
+.contact-form input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover, .contact-form input:focus, .contact-form textarea:focus, .contact-form input:hover, .contact-form textarea:hover{
+    border: 1px solid var(--white);
+    box-shadow: 0 0 4px var(--white-shadow);
+}
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+.footer-details {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-details p {
+    font-size: 20px;
+}
