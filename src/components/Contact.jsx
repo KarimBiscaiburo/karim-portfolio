@@ -11,11 +11,13 @@ export default function Contact() {
     const service_id = import.meta.env.VITE_SERVICE_ID;
     const template_id = import.meta.env.VITE_TEMPLATE_ID;
 
+    //SEND EMAIL FUNCTION
     function handleSubmit(e) {
         e.preventDefault();
 
         setLoader(true);
 
+        //GET DATA FROM INPUTS
         const data = Object.fromEntries(new FormData(e.target));
 
         const message = {
@@ -24,10 +26,20 @@ export default function Contact() {
             message: data.message
         }
 
+        //SEND EMAIL
         emailjs.send(service_id, template_id, message, {publicKey: public_key})
             .then(res => {
                 console.log(res.status, res.text);
                 setLoader(false);
+
+                //SHOW MESSAGE
+                const successMessage = document.querySelector(".success-message")
+                successMessage.classList.add("active");
+
+                setTimeout(() => {
+                    successMessage.classList.remove("active");
+                }, 2000)
+
             }, err => {
                 console.log(err);
             })

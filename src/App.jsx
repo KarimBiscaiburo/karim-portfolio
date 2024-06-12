@@ -24,6 +24,7 @@ function App() {
         <Education />
         <Technologies />
         <Contact />
+        <div className="success-message">Message sent successfully</div>
       </div>
     </>
   )
