@@ -1,16 +1,50 @@
 import "../styles/contact.css";
 
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const [loader, setLoader] = useState(false);
+
+    //GET .ENV VARIABLES
+    const public_key = import.meta.env.VITE_PUBLIC_KEY;
+    const service_id = import.meta.env.VITE_SERVICE_ID;
+    const template_id = import.meta.env.VITE_TEMPLATE_ID;
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        setLoader(true);
+
+        const data = Object.fromEntries(new FormData(e.target));
+
+        const message = {
+            from_name: data.email,
+            subject: data.subject,
+            message: data.message
+        }
+
+        emailjs.send(service_id, template_id, message, {publicKey: public_key})
+            .then(res => {
+                console.log(res.status, res.text);
+                setLoader(false);
+            }, err => {
+                console.log(err);
+            })
+
+        e.target.reset();
+    }
 
     return (
 
         <footer className="footer-contact" id="contact">
-            <form className="contact-form">
-                <input type="email" id="email" placeholder="Email"/>
-                <input type="text" id="subject" placeholder="Subject"/>
-                <textarea name="message" id="message" placeholder="Message"></textarea>
-                <input type="submit" value="Send"/>
+            <form className="contact-form" onSubmit={(e)=> handleSubmit(e)}>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required/>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                {
+                    loader ? <span className="loader"></span> : <input type="submit" value="Send"/>
+                }
             </form>
             <div className="footer-details">
                 <p>I would like to highlight that I firmly believe in constant learning, so I would not like to stop studying/learning new things at any time. This is why I am going to try to take every opportunity to develop myself both professionally and personally.</p>
