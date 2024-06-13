@@ -1,27 +1,14 @@
-.about-section {
-    padding: 120px 0;
-}
-.about-section h2 {
-    font-size: 50px;
-    font-weight: bold;
-}
-.about-details {
-    display: flex;
-    gap: 5px;
-    margin-top: 70px;
-    justify-content: space-between;
-}
+.about-section h2 {font-weight: bold;}
 .about-details .titles {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    justify-content: space-between;
 }
 .about-details .titles h3 {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 36px;
     font-weight: bold;
     color: var(--gray);
     cursor: pointer;
@@ -34,25 +21,84 @@
     width: 30px;
     background-color: var(--lighten-gray);
 }
-.about-details .titles h3.active {
-    font-size: 44px;
-    color: var(--white);
-}
+.about-details .titles h3.active {color: var(--white);}
 .about-details .titles h3.active span {
     background-color: var(--white);
 }
 .texts {
     flex-grow: 3;
-    max-width: 650px;
-    height: 430px;
     border: 1px solid var(--gray);
     border-radius: 5px;
     box-shadow: 0 0 7px 4px var(--dark);
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.texts p {
-    font-size: 24px;
+@media (max-width: 1300px) {
+    .about-section h2 {font-size: 46px;}
+    .about-details .titles h3 {font-size: 26px;}
+    .about-details .titles h3.active {font-size: 32px;}
+}
+@media (min-width: 1300px) {
+    .about-section h2 {font-size: 50px;}
+    .about-details .titles h3 {font-size: 36px;}
+    .about-details .titles h3.active {font-size: 44px;}
+}
+
+@media (max-width: 800px) {
+    .texts {
+        height: auto;
+    }
+}
+@media (min-width: 800px) and (max-width: 1140px){
+    .texts {
+        height: 380px;
+    }
+}
+@media (max-width: 1140px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+    }
+    .about-details {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .about-details .titles {
+        height: 300px;
+        gap: 25px;
+    }
+    .texts {
+        max-width: 550px;
+    }
+    .texts p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (min-width: 1140px) {
+    .about-section {padding: 120px 0}
+    .about-details {
+        display: flex;
+        gap: 25px;
+        margin-top: 70px;
+        justify-content: space-between;
+    }
+    .about-details .titles {
+        height: 430px;
+        gap: 60px;
+    }
+    .texts {
+        max-width: 550px;
+        height: 480px;
+    }
+    .texts p {
+        font-size: 24px;
+    }
 }

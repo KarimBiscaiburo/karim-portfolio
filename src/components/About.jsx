@@ -4,7 +4,7 @@ import "../styles/about.css";
 
 const texts = {
     introduction_1: "My name is Karim Biscaiburo, born on 08/28/2002 in Santa Cruz, Rio Gallegos-Argentina, but currently residing in Mar del Plata, Buenos Aires-Argentina.",
-    introduction_2: "I look forward to any opportunity to develop my skills professionally in order to participate in the solution and resolution of as many problems as required.",
+    introduction_2: "I am eager to pursue opportunities that allow me to develop my professional skills and contribute effectively to solving a wide range of challenges.",
 
     howIStarted_1: "During my last year of high school, and the pandemic, I began to venture into the world of web development and programming, learning about algorithms and the logic that they entail.",
     howIStarted_2: "When I finished high school, I decided to further reinforce this knowledge by enrolling in a Programming Technique. After a year of studying, I discovered that I am passionate about web design and everything it encompasses, so I changed my course and started taking online courses, in academies and with mentors on YouTube, on web design.",

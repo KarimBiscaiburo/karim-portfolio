@@ -1,55 +1,153 @@
 .section-projects {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     padding-top: 120px;
-}
-.projects-title {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
 }
 .projects-title h2 {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
 }
-.project-card {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
+.project-card:last-of-type {
+    margin: 0;
 }
 .project-card_details {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     background-color: var(--darken-gray);
     box-shadow: 0 0 10px 4px var(--dark);
     padding: 20px;
-    height: 400px;
     border-radius: 5px;
     z-index: 50;
 }
-.project-card_details h3 {
-    font-size: 38px;
-    font-weight: bold;
+.project-card-logos {
+    display: flex;
+    gap: 10px;
 }
-.project-card_details p {
-    font-size: 26px;
+.project-card-logos img {
+    height: 50px;
+    width: 50px;
 }
-.project-card_image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
 
+@media (max-width: 750px) {
+    .project-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-card_details {
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        gap: 20px;
+    }
+    .project-card_details h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .project-card_details p {
+        font-size: 20px;
+    }
+    .project-card_image {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        border-radius: 5px;
+    }
+    .project-card_image img {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+        border-radius: 5px;
+        z-index: 30;
+    }
+    .project-card-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
-.project-card_image img {
-    position: absolute;
-    top: -125px;
-    left: -40px;
-    width: 700px;
-    height: 650px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 5px;
-    z-index: 30;
+@media (min-width: 750px) and (max-width: 1300px) {
+    .project-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-card_details {
+        align-items: center;
+        max-width: 400px;
+        text-align: center;
+        gap: 20px;
+    }
+    .project-card_details h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .project-card_details p {
+        font-size: 20px;
+    }
+    .project-card_image {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        border-radius: 5px;
+    }
+    .project-card_image img {
+        position: absolute;
+        top: -30px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+        border-radius: 5px;
+        z-index: 30;
+    }
+}
+
+@media (min-width: 1300px) {
+    .projects-title {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .project-card {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        margin-bottom: 350px;
+    }
+    .project-card_details {
+        gap: 40px;
+        min-height: 350px;
+    }
+    .project-card_details h3 {
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .project-card_details p {
+        font-size: 26px;
+    }
+    .project-card_image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .project-card_image img {
+        position: absolute;
+        top: -125px;
+        left: -40px;
+        width: 700px;
+        height: 650px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 5px;
+        z-index: 30;
+    }
 }

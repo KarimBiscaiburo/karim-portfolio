@@ -12,13 +12,26 @@ import schoolFilledIcon from "../img/school-filled-icon.png";
 import mailIcon from "../img/mail-icon.png";
 import mailFilledIcon from "../img/mail-filled-icon.png";
 import settingsIcon from "../img/settings-icon.png";
+import { useState } from "react";
 
 export default function Nav() {
+    const [navActive, setNavActive] = useState(true);
+    const [buttonActive, setButtonActive] = useState(false);
+
+    const clasNav = navActive ? "nav active" : "nav";
+    const clasButton = buttonActive ? "active" : null;
+
+    function handleNav() {
+        setNavActive(!navActive);
+
+        setButtonActive(true);
+        setTimeout(()=> setButtonActive(false), 1000)
+    }
 
     return ( 
         <>
             <header className="header">
-                <nav className="nav">
+                <nav className={clasNav}>
                     <ul className="nav_list">
                         <li className="nav_list-item">
                             <a href="#about"><img src={personIcon} alt="person-icon" /></a>
@@ -38,7 +51,7 @@ export default function Nav() {
                     </ul>
                 </nav>
                 <div className="settings">
-                    <button>
+                    <button onClick={handleNav} className={clasButton}>
                         <img src={settingsIcon} alt="settings-icon" />
                     </button>
                 </div>
